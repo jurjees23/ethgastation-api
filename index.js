@@ -17,10 +17,10 @@ async function gasstationInfo(type){
     }
   
 }
-
-gasstationInfo("fastest")
-.then(result=>{
-    console.log("result",result);
-}).catch(err=>{
-    console.log("err",err);
-});
+module.exports.gasstationInfo=gasstationInfo;
+// gasstationInfo("fastest")
+// .then(result=>{
+//     console.log("result",result);
+// }).catch(err=>{
+//     console.log("err",err);
+// });
