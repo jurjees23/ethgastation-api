@@ -21,7 +21,7 @@
     });
 
 #  Sample Ethereum Send Transaction
-    ```
+   
      const sendTransaction = async () => {
 
         var gasPriceResult=await gasstationInfo("fastest");
@@ -41,8 +41,7 @@
         });
 
      }
-     
-    ```
+
 
 # How to Solve Cors Issue If Occur
 
