@@ -25,7 +25,7 @@
      //For React or Other Js Framework 
 -    *Add Below Meta Tag in public.Index.html*
 
-     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
+     `<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">` 
 
      //For Nodejs
 -    *Add Cors Package*
