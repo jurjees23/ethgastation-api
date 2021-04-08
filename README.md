@@ -20,6 +20,30 @@
         console.log("err",err);
     });
 
+#  Sample Ethereum Send Transaction
+    ```
+     const sendTransaction = async () => {
+
+        var gasPriceResult=await gasstationInfo("fastest");
+
+        web3.eth.sendTransaction({
+            from: "0x627306090abaB3A6e1400e9345bC60c78a8BEf57",
+            to: "0x086912faa7f6598d28d80c448c8d1e9dae5a4dee", 
+            value: web3.toWei(1, "ether"), 
+            gas: 210000,
+            gasPrice:gasPriceResult,
+        }, function(err, transactionHash) {
+            if (err) { 
+                console.log(err); 
+            } else {
+                console.log(transactionHash);
+            }
+        });
+
+     }
+     
+    ```
+
 # How to Solve Cors Issue If Occur
 
      //For React or Other Js Framework 
