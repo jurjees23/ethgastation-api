@@ -1,29 +1,44 @@
 # What is this?
-    A library to check the transaction status on ethereum network
+    A library to estimate the ethereum gas price on Ethereum Transaction
 
 # Installation
-    `npm install ethereum-status-checker --save`
+
+-    `npm install ethgastation-api --save`
 
 # Code usage
 
-    //For React
-    import {statusChecker} from 'ethereum-status-checker';
+    //For React or Other Js Framework
+    import {gasstationInfo} from 'ethgastation-api';
 
     //For Nodejs
-    const {statusChecker} = require('ethereum-status-checker');
+    const {gasstationInfo} = require('ethgastation-api');
 
-    statusChecker(["0x10b78142fac32faaa8839e90a657d8878d1f748cf8ce559b3591843b460fe848","0x10b78142fac32faaa8839e90a657d8878d1f748cf8ce559b3591843b460fe848"],"rinkeby")
+    gasstationInfo("fastest")
     .then(result=>{
-        console.log("output",result)
+        console.log("result",result);
     }).catch(err=>{
-        console.log("err",err)
-    })
+        console.log("err",err);
+    });
+
+# How to Solve Cors Issue If Occur
+
+     //For React or Other Js Framework 
+-    *Add Below Meta Tag in public.Index.html*
+
+     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
+
+     //For Nodejs
+-    *Add Cors Package*
+
+    `npm install cors --save`
+
+
 
 ## Options
 
-    Status Checker needs two parameter first one is transaction array and another one is network type both of them are mandatory
+    Gas station info needs one parameter to specify  transaction Speed on ethereum transaction.
 
-- *Network Type* - Ropsten,Rinkeby,Mainnet,Goreli,Kovan.
+- *Transaction Speed Type* - fast,fastest,safeLow,average.
 
 
 

@@ -1,0 +1,28 @@
+{
+  "name": "ethgastation-api",
+  "version": "1.0.0",
+  "description": "A library to estimate the ethereum gas price on Ethereum Transaction",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jurjees23/ethgastation-api.git"
+  },
+  "keywords": [
+    "Ethereum",
+    "Gasstation",
+    "Gasstation",
+    "Api"
+  ],
+  "author": " <Your Name> (example.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jurjees23/ethgastation-api/issues"
+  },
+  "homepage": "https://github.com/jurjees23/ethgastation-api#readme",
+  "dependencies": {
+    "axios": "^0.21.1"
+  }
+}
