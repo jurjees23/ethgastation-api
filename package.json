@@ -1,5 +1,5 @@
 {
-  "name": "ethgasstation-price-estimator",
+  "name": "ethereum-gasprice-estimator",
   "version": "1.0.0",
   "description": "A library to estimate the ethereum gas price on Ethereum Transaction",
   "main": "index.js",

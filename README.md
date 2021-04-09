@@ -3,15 +3,15 @@
 
 # Installation
 
--    `npm install ethgasstation-price-estimator --save`
+-    `npm install ethereum-gasprice-estimator --save`
 
 # Code usage
 
     //For React or Other Js Framework
-    import {gasstationInfo} from 'ethgasstation-price-estimator';
+    import {gasstationInfo} from 'ethereum-gasprice-estimator';
 
     //For Nodejs
-    const {gasstationInfo} = require('ethgasstation-price-estimator');
+    const {gasstationInfo} = require('ethereum-gasprice-estimator');
 
     gasstationInfo("fastest")
     .then(result=>{
